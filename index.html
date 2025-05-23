@@ -2,25 +2,47 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <title>SeeHull</title>
+  <title>SeeHull Lander</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
   <style>
     html, body {
-      margin: 0;
-      padding: 0;
-      height: 100%;
-      background: #000;
+      margin: 0; padding: 0;
+      height: 100%; overflow: hidden;
     }
     .bg {
-      background-image: url('031045f2-63ce-432a-86a6-79b77bd1a772.png');
+      position: fixed;
+      top: 0; left: 0;
+      width: 100vw; height: 100vh;
+      background-image: url('/031045f2-63ce-432a-86a6-79b77bd1a772.png');
       background-size: cover;
       background-position: center;
       background-repeat: no-repeat;
-      height: 100%;
-      width: 100%;
+      z-index: -1;
+    }
+    .overlay {
+      position: relative;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      flex-direction: column;
+      width: 100vw; height: 100vh;
+      color: white;
+      text-align: center;
+      font-family: sans-serif;
+    }
+    .overlay h1 {
+      font-size: 4rem; margin: 0;
+    }
+    .overlay p {
+      font-size: 1.5rem; margin: 0.5rem 0 0;
     }
   </style>
 </head>
 <body>
   <div class="bg"></div>
+  <div class="overlay">
+    <h1>SeeHull</h1>
+    <p>marine@seehull.com</p>
+  </div>
 </body>
 </html>
