@@ -4,25 +4,22 @@
   <meta charset="UTF-8">
   <title>SeeHull</title>
   <style>
-    /* Сбрасываем отступы */
     * { margin: 0; padding: 0; }
-
-    /* Занимаем всё окно */
-    html, body {
-      width: 100%;
-      height: 100%;
-    }
-
-    /* Фон по центру */
+    html, body { width: 100%; height: 100%; }
     body {
-      background-color: #153149; /* близкий к морскому синий */
-      background-image: url('031045f2-63ce-432a-86a6-79b77bd1a772.png');
-      background-repeat: no-repeat;
-      background-position: center center;
-      background-size: contain;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      background: #153149;
+    }
+    img {
+      max-width: 100%;
+      height: auto;
+      display: block;
     }
   </style>
 </head>
 <body>
+  <img src="031045f2-63ce-432a-86a6-79b77bd1a772.png" alt="SeeHull">
 </body>
 </html>
