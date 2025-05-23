@@ -4,13 +4,27 @@
   <meta charset="UTF-8">
   <title>SeeHull</title>
   <style>
-    * { margin: 0; padding: 0; box-sizing: border-box; }
-    html, body { width: 100%; height: 100%; }
+    *{margin:0;padding:0;box-sizing:border-box;}
+    html,body{width:100%;height:100%;}
     body {
-      background: #0a2235 url('031045f2-63ce-432a-86a6-79b77bd1a772.png') center center / cover no-repeat;
+      background: url('031045f2-63ce-432a-86a6-79b77bd1a772.png') center center/cover no-repeat;
+      display:flex;
+      align-items:center;
+      justify-content:center;
     }
+    .overlay {
+      background:rgba(0,0,0,0.5);
+      padding:2rem;
+      text-align:center;
+    }
+    .overlay h1{color:#fff;font-size:4rem;font-family:sans-serif;}
+    .overlay p{color:#fff;font-size:1.5rem;margin-top:0.5rem;}
   </style>
 </head>
 <body>
+  <div class="overlay">
+    <h1>SeeHull</h1>
+    <p>marine@seehull.com</p>
+  </div>
 </body>
 </html>
